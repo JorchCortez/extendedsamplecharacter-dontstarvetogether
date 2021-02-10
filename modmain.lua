@@ -51,8 +51,19 @@ STRINGS.CHARACTER_SURVIVABILITY.boomccoon = "Slim"
 STRINGS.CHARACTERS.BOOMCOON = require "speech_boomccoon"
 
 -- The character's name as appears in-game 
-STRINGS.NAMES.BOOMCOON = "Esc"
-STRINGS.SKIN_NAMES.boomccoon_none = "Esc"
+STRINGS.NAMES.BOOMCOON = "Boomcoon"
+STRINGS.SKIN_NAMES.boomccoon_none = "Boomcoon"
+
+-- The default responses of examining the character
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.BOOMCOON = 
+{
+	GENERIC = "It's Boomccoon!",
+	ATTACKER = "Your machine burned my house!",
+	MURDERER = "Murderer!",
+	REVIVER = "Boomccoon, friend of ghosts.",
+	GHOST = "Boomccoon could use some help please.",
+}
+
 
 -- The skins shown in the cycle view window on the character select screen.
 -- A good place to see what you can put in here is in skinutils.lua, in the function GetSkinModes
