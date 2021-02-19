@@ -46,10 +46,16 @@ local TECH = GLOBAL.TECH
 
 
 --Automation Tech tree
-local drones_tab = AddRecipeTab("Automation", 999,  "images/hud/drones_tab.xml", "drones_tab.tex", "boomcoontag")
+local Automation_TAB = AddRecipeTab("Automation", 999,  "images/hud/test_tab.xml", "test_tab.tex", "boomcoontag")
 STRINGS.NAMES.Automation_TAB = "Automation"
-modimport "scripts/custom_tech_tree.lua"
-GLOBAL.AddNewTechTree("AUTOMATION", 2)
+--modimport "scripts/custom_tech_tree.lua"
+--GLOBAL.AddNewTechTree("AUTOMATION", 2)
+
+--Boomcoon Items 
+local BCLantern_recipe = AddRecipe("Lantern", {Ingredient("log", 4), Ingredient("rocks", 4), Ingredient("rope", 2)}, drones_tab, TECH.NONE, nil, nil, nil, nil, "boomcoontag", "images/hud/test_tab.xml", "test_tab.tex")
+STRINGS.NAMES.BCLantern = "Lantern" --Crafting tab and on-the-ground name
+STRINGS.RECIPE_DESC.BCLantern = "A box for all your tools." --Crafting tab description
+
 
 
 
