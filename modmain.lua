@@ -39,6 +39,20 @@ AddMinimapAtlas("images/map_icons/boomccoon.xml")
 
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
+local RECIPETABS = GLOBAL.RECIPETABS
+local Ingredient = GLOBAL.Ingredient
+local character_ingredient = GLOBAL.CHARACTER_INGREDIENT
+local TECH = GLOBAL.TECH
+
+
+--Automation Tech tree
+local drones_tab = AddRecipeTab("Automation", 999,  "images/hud/drones_tab.xml", "drones_tab.tex", "boomcoontag")
+STRINGS.NAMES.Automation_TAB = "Automation"
+modimport "scripts/custom_tech_tree.lua"
+GLOBAL.AddNewTechTree("AUTOMATION", 2)
+
+
+
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.boomccoon = "The automation entusiast"
