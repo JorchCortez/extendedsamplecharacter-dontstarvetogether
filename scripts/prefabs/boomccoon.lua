@@ -52,6 +52,7 @@ end
 local common_postinit = function(inst) 
 	-- Minimap icon
 	inst.MiniMapEntity:SetIcon( "boomccoon.tex" )
+	inst:AddTag("boomcoontag")
 end
 
 -- This initializes for the server only. Components are added here.
@@ -65,7 +66,6 @@ local master_postinit = function(inst)
 	-- Uncomment if "wathgrithr"(Wigfrid) or "webber" voice is used
     --inst.talker_path_override = "dontstarve_DLC001/characters/"
 	
-	-- Stats	
 	inst.components.health:SetMaxHealth(TUNING.BOOMCOON_HEALTH)
 	inst.components.hunger:SetMax(TUNING.BOOMCOON_HUNGER)
 	inst.components.sanity:SetMax(TUNING.BOOMCOON_SANITY)
