@@ -30,7 +30,7 @@ Assets = {
 	
 	Asset( "IMAGE", "images/names_boomccoon.tex" ),
     Asset( "ATLAS", "images/names_boomccoon.xml" ),
-	
+
 	Asset( "IMAGE", "images/names_gold_boomccoon.tex" ),
     Asset( "ATLAS", "images/names_gold_boomccoon.xml" ),
 }
@@ -44,17 +44,29 @@ local Ingredient = GLOBAL.Ingredient
 local character_ingredient = GLOBAL.CHARACTER_INGREDIENT
 local TECH = GLOBAL.TECH
 
+--Adding custom Recipe tabs
 
---Automation Tech tree
+--Automation Tab
+--AddRecipeTab(rec_str, rec_sort, rec_atlas, rec_icon, rec_owner_tag, rec_crafting_station)
+AddRecipeTab("ANCIENT", 100, nil, "tab_crafting_table.tex", nil, false) 
 local Automation_TAB = AddRecipeTab("Automation", 999,  "images/hud/test_tab.xml", "test_tab.tex", "boomcoontag")
 STRINGS.NAMES.Automation_TAB = "Automation"
 --modimport "scripts/custom_tech_tree.lua"
 --GLOBAL.AddNewTechTree("AUTOMATION", 2)
 
+AddRecipe("Lantern", {
+                        Ingredient("twigs", 2), 
+                        Ingredient("rope", 1), 
+                        Ingredient("flint", 1) 
+                    }, 
+                    Automation_TAB, TECH.NONE )
+
+
+
 --Boomcoon Items 
-local BCLantern_recipe = AddRecipe("Lantern", {Ingredient("log", 4), Ingredient("rocks", 4), Ingredient("rope", 2)}, drones_tab, TECH.NONE, nil, nil, nil, nil, "boomcoontag", "images/hud/test_tab.xml", "test_tab.tex")
-STRINGS.NAMES.BCLantern = "Lantern" --Crafting tab and on-the-ground name
-STRINGS.RECIPE_DESC.BCLantern = "A box for all your tools." --Crafting tab description
+--local BCLantern_recipe = AddRecipe("Lantern", {Ingredient("log", 4), Ingredient("rocks", 4), Ingredient("rope", 2)}, drones_tab, TECH.NONE, nil, nil, nil, nil, "boomcoontag", "images/hud/test_tab.xml", "test_tab.tex")
+--STRINGS.NAMES.BCLantern = "Lantern" --Crafting tab and on-the-ground name
+--STRINGS.RECIPE_DESC.BCLantern = "A box for all your tools." --Crafting tab description
 
 
 

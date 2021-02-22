@@ -51,7 +51,7 @@ end
 -- This initializes for both the server and client. Tags can be added here.
 local common_postinit = function(inst) 
 	-- Minimap icon
-	inst.MiniMapEntity:SetIcon( "boomccoon.tex" )
+	inst.MiniMapEntity:SetIcon("boomccoon.tex")
 	inst:AddTag("boomcoontag")
 end
 
