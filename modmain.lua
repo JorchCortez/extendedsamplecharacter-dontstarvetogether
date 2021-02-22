@@ -38,6 +38,9 @@ Assets = {
 	--In-Game Image Assets
     Asset("IMAGE", "images/hud/Icon_Tools_test.tex"),
     Asset("ATLAS", "images/hud/Icon_Tools_test.xml"),
+
+    Asset("IMAGE", "images/hud/test_tab.tex"),
+    Asset("ATLAS", "images/hud/test_tab.xml"),
 }
 
 AddMinimapAtlas("images/map_icons/boomccoon.xml")
@@ -63,8 +66,8 @@ STRINGS.NAMES.Automation_TAB = "Automation"
 
 
 --Boomcoon Items  
-local bclantern_recipe = AddRecipe("Lantern", {Ingredient("log", 4), Ingredient("rocks", 4), Ingredient("rope", 2)}, Automation_TAB, TECH.NONE, nil, nil, nil, nil, "boomccoontag", "images/hud/test_tab.xml", "test_tab.tex")
-STRINGS.NAMES.WAPATHYBOX = "Lantern" --Crafting tab and on-the-ground name
+local bclantern_recipe = AddRecipe("bclantern", {Ingredient("log", 4), Ingredient("rocks", 4), Ingredient("rope", 2)}, Automation_TAB, TECH.NONE, nil, nil, nil, nil, "boomccoontag", "images/hud/test_tab.xml", "test_tab.tex")
+STRINGS.NAMES.BCLANTERN = "Flashy flask" --Crafting tab and on-the-ground name
 STRINGS.RECIPE_DESC.WAPATHYBOX = "A Lantern to view it all." --Crafting tab description
 
 
