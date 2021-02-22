@@ -33,6 +33,11 @@ Assets = {
 
 	Asset( "IMAGE", "images/names_gold_boomccoon.tex" ),
     Asset( "ATLAS", "images/names_gold_boomccoon.xml" ),
+
+    
+	--In-Game Image Assets
+    Asset("IMAGE", "images/hud/Icon_Tools_test.tex"),
+    Asset("ATLAS", "images/hud/Icon_Tools_test.xml"),
 }
 
 AddMinimapAtlas("images/map_icons/boomccoon.xml")
@@ -48,18 +53,12 @@ local TECH = GLOBAL.TECH
 
 --Automation Tab
 --AddRecipeTab(rec_str, rec_sort, rec_atlas, rec_icon, rec_owner_tag, rec_crafting_station)
-AddRecipeTab("ANCIENT", 100, nil, "tab_crafting_table.tex", nil, false) 
-local Automation_TAB = AddRecipeTab("Automation", 999,  "images/hud/test_tab.xml", "test_tab.tex", "boomcoontag")
+local Automation_TAB = AddRecipeTab("Automation", 999,  "images/hud/Icon_Tools_test.xml", "Icon_Tools_test.tex", "boomcoontag")
 STRINGS.NAMES.Automation_TAB = "Automation"
 --modimport "scripts/custom_tech_tree.lua"
 --GLOBAL.AddNewTechTree("AUTOMATION", 2)
 
-AddRecipe("Lantern", {
-                        Ingredient("twigs", 2), 
-                        Ingredient("rope", 1), 
-                        Ingredient("flint", 1) 
-                    }, 
-                    Automation_TAB, TECH.NONE )
+--AddRecipe("Lantern", { Ingredient("twigs", 2), Ingredient("rope", 1),Ingredient("flint", 1)},"Automation", TECH.SCIENCE_ONE )
 
 
 
