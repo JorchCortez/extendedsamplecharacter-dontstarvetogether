@@ -53,7 +53,7 @@ local TECH = GLOBAL.TECH
 
 --Automation Tab
 --AddRecipeTab(rec_str, rec_sort, rec_atlas, rec_icon, rec_owner_tag, rec_crafting_station)
-local Automation_TAB = AddRecipeTab("Automation", 999,  "images/hud/Icon_Tools_test.xml", "Icon_Tools_test.tex", "boomcoontag")
+local Automation_TAB = AddRecipeTab("Automation", 999,  "images/hud/Icon_Tools_test.xml", "Icon_Tools_test.tex", "boomccoontag")
 STRINGS.NAMES.Automation_TAB = "Automation"
 --modimport "scripts/custom_tech_tree.lua"
 --GLOBAL.AddNewTechTree("AUTOMATION", 2)
@@ -62,10 +62,10 @@ STRINGS.NAMES.Automation_TAB = "Automation"
 
 
 
---Boomcoon Items 
---local BCLantern_recipe = AddRecipe("Lantern", {Ingredient("log", 4), Ingredient("rocks", 4), Ingredient("rope", 2)}, drones_tab, TECH.NONE, nil, nil, nil, nil, "boomcoontag", "images/hud/test_tab.xml", "test_tab.tex")
---STRINGS.NAMES.BCLantern = "Lantern" --Crafting tab and on-the-ground name
---STRINGS.RECIPE_DESC.BCLantern = "A box for all your tools." --Crafting tab description
+--Boomcoon Items  
+local bclantern_recipe = AddRecipe("Lantern", {Ingredient("log", 4), Ingredient("rocks", 4), Ingredient("rope", 2)}, Automation_TAB, TECH.NONE, nil, nil, nil, nil, "boomccoontag", "images/hud/test_tab.xml", "test_tab.tex")
+STRINGS.NAMES.WAPATHYBOX = "Lantern" --Crafting tab and on-the-ground name
+STRINGS.RECIPE_DESC.WAPATHYBOX = "A Lantern to view it all." --Crafting tab description
 
 
 

@@ -52,7 +52,7 @@ end
 local common_postinit = function(inst) 
 	-- Minimap icon
 	inst.MiniMapEntity:SetIcon("boomccoon.tex")
-	inst:AddTag("boomcoontag")
+	inst:AddTag("boomccoontag")
 end
 
 -- This initializes for the server only. Components are added here.
