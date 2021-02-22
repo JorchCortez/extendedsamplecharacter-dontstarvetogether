@@ -6,9 +6,9 @@ local assets = {
 
 -- Your character's stats
 TUNING.BOOMCOON_HEALTH = 150
-TUNING.BOOMCOON_HUNGER = 170
+TUNING.BOOMCOON_HUNGER = 250
 TUNING.BOOMCOON_SANITY = 200
-TUNING.BOOMCOON_HUNGER_RATE = 1.25
+TUNING.BOOMCOON_HUNGER_RATE = 1.05
 
 -- Custom starting inventory
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.BOOMCOON = {
@@ -32,7 +32,7 @@ end
 
 local function onbecameghost(inst)
 	-- Remove speed modifier when becoming a ghost
-   inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "boomccoon_speed_mod")
+   	inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "boomccoon_speed_mod")
 end
 
 -- When loading or spawning the character
