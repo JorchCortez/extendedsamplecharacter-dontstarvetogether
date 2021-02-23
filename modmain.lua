@@ -2,7 +2,7 @@ PrefabFiles = {
 	"boomccoon",
 	"boomccoon_none",
 }
-
+ 
 Assets = {
     Asset( "IMAGE", "images/saveslot_portraits/boomccoon.tex" ),
     Asset( "ATLAS", "images/saveslot_portraits/boomccoon.xml" ),
